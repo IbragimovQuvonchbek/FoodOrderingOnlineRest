@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-black-800 text-gold-100 font-body;
+  }
+  h1, h2, h3, h4 {
+    @apply font-display text-gold-500;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-gold-500 hover:bg-gold-600 text-black-900 font-bold py-3 px-6 rounded-lg
+           transition-all duration-300 shadow-lg hover:shadow-gold;
+  }
+  .btn-secondary {
+    @apply bg-transparent hover:bg-black-900 text-gold-500 font-bold py-3 px-6
+           border-2 border-gold-500 rounded-lg transition-all duration-300;
+  }
+  .card {
+    @apply bg-black-800 border border-gold-500/20 rounded-xl overflow-hidden
+           shadow-lg hover:shadow-gold transition-all duration-300;
+  }
+  .navbar {
+    @apply bg-black-900 text-gold-500 shadow-md border-b border-gold-500/10;
+  }
+  .footer {
+    @apply bg-black-900 text-gold-300 border-t border-gold-500/10;
+  }
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold-400 via-gold-500 to-gold-600;
+  }
+}

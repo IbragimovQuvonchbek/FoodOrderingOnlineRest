@@ -1,0 +1,27 @@
+.idea
+__pycache__
+.venv
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+food-order-app/node_modules
+food-order-app/.pnp
+food-order-app/.pnp.js
+
+# testing
+food-order-app/coverage
+
+# production
+food-order-app/build
+
+# misc
+food-order-app/.DS_Store
+food-order-app/.env.local
+food-order-app/.env.development.local
+food-order-app/.env.test.local
+food-order-app/.env.production.local
+
+food-order-app/npm-debug.log*
+food-order-app/yarn-debug.log*
+food-order-app/yarn-error.log*
